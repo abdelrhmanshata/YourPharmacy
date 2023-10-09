@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layoutDirection="ltr"
+    android:background="@drawable/border"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/_4sdp">
+
+        <Switch
+            android:id="@+id/btnisAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:checked="true"
+            android:contentDescription="@string/TODO"
+            android:gravity="center"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="Abd Elrhman Shata"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="bodyshata5@gmail.com"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

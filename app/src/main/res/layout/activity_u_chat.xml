@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    android:layoutDirection="ltr"
+    tools:context=".UI.User.U_Chat_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        android:theme="@style/ToolbarTheme"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ChatRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutQuestions"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/_8sdp" />
+
+    <ImageView
+        android:id="@+id/addQuestion"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/question"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_background_2"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/QuestionsRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
